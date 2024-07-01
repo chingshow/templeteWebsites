@@ -55,7 +55,7 @@ nav a {
 
 /* Hero Section */
 #hero {
-    height: 100vh;
+    height: 55.5vw;
     background-image: url('./images/imageKV.png');
     background-size: cover;
     background-position: center;
