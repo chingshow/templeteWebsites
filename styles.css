@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    background-image: url('./images/imageKV.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: rgb(146, 174, 208);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* Sections */
+section {
+    padding: 4rem 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Speakers Grid */
+.speaker-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.speaker-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
+.speaker-card p{
+    margin: 1em;
+}
+
+.speaker-card .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    max-height: 70%;
+    overflow-y: auto;
+    opacity: 0; /* 初始狀態為完全透明 */
+}
+
+.speaker-card:hover .description {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.speaker-card:hover {
+    transform: translateY(-5px);
+}
+
+.speaker-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.speaker-card h3 {
+    padding: 1rem;
+}
+
+.speaker-card .title {
+    padding: 0 1rem;
+    font-style: italic;
+}
+
+.speaker-card .description {
+    padding: 1rem;
+    display: none;
+}
+
+.speaker-card:hover .description {
+    display: block;
+}
+
+/* Agenda */
+.agenda-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* FAQ Accordion */
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #f8f9fa;
+}
+
+.accordion-content {
+    padding: 1rem;
+    display: none;
+}
+
+/* Registration */
+.register-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.register-button img {
+    max-width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.register-button:hover img {
+    transform: scale(1.05);
+}
+
+#countdown {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+footer img {
+    max-width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    nav ul.show li {
+        margin: 0;
+        padding: 1rem;
+        border-top: 1px solid #ddd;
+    }
+
+    .speaker-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .register-options {
+        flex-direction: column;
+        align-items: center;
+    }
+}

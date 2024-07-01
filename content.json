@@ -1,0 +1,122 @@
+{
+  "siteTitle": "Activity Title",
+  "navigation": [
+    {"label": "Introduction", "link": "#intro"},
+    {"label": "Speakers", "link": "#speakers"},
+    {"label": "Agenda", "link": "#agenda"},
+    {"label": "FAQ", "link": "#faq"},
+    {"label": "Register", "link": "#register"}
+  ],
+  "languages": [
+    {"label": "English", "code": "en", "active": true},
+    {"label": "中文", "code": "zh", "active": false}
+  ],
+  "hero": {
+    "title": "Activity Title",
+    "date": "1095",
+    "ctaButton": {
+      "text": "Register Now",
+      "link": "#register"
+    },
+    "backgroundImage": "./images/imageKV.png"
+  },
+  "introduction": {
+    "title": "Introduction",
+    "content": "Introduction of the activity. Good Morning Everyone!"
+  },
+  "speakers": {
+    "title": "Speakers",
+    "list": [
+      {
+        "name": "Your Name",
+        "photo": "./images/javascript.jpg",
+        "title": "Where you are from, what you can do",
+        "description": "Introduce yourself. Introduce yourself. Introduce yourself."
+      },
+      {
+        "name": "Your Name",
+        "photo": "./images/html.jpg",
+        "title": "Where you are from, what you can do",
+        "description": "Introduce yourself. Introduce yourself. Introduce yourself."
+      },
+      {
+        "name": "Your Name",
+        "photo": "./images/css.jpg",
+        "title": "Where you are from, what you can do Where you are from, what you can doWhere you are from, what you can do",
+        "description": "Introduce yourself. Introduce yourself. Introduce yourself."
+      },
+      {
+        "name": "Your Name",
+        "photo": "./images/css.jpg",
+        "title": "Where you are from, what you can do",
+        "description": "Introduce yourself. Introduce yourself. Introduce yourself.Introduce yourself. Introduce yourself. Introduce yourself.Introduce yourself. Introduce yourself. Introduce yourself.Introduce yourself. Introduce yourself. Introduce yourself.Introduce yourself. Introduce yourself. Introduce yourself."
+      },
+      {
+        "name": "Your Name",
+        "photo": "./images/css.jpg",
+        "title": "Where you are from, what you can do",
+        "description": "Introduce yourself. Introduce yourself. Introduce yourself."
+      },
+      {
+        "name": "Your Name",
+        "photo": "./images/css.jpg",
+        "title": "Where you are from, what you can do",
+        "description": "Introduce yourself. Introduce yourself. Introduce yourself."
+      }
+    ]
+  },
+  "agenda": {
+    "title": "Agenda",
+    "image": "./images/Agenda.png"
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "Questions1",
+        "answer": "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers."
+      },
+      {
+        "question": "Questions2",
+        "answer": "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers."
+      },
+      {
+        "question": "Questions3",
+        "answer": "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers."
+      }
+    ]
+  },
+  "registration": {
+    "title": "Registration",
+    "options": [
+      {
+        "link": "https://www.accupass.com/go/Avatar2023",
+        "image": "./images/signUpWebsite1.png"
+      },
+      {
+        "link": "https://www.eventbrite.com/e/avatar-medicine-forum-2023-tickets-697936054527?aff=oddtdtcreator",
+        "image": "./images/signUpWebsite2.png"
+      }
+    ],
+    "eventDate": "2024-12-31T00:00:00"
+  },
+  "footer": {
+    "organizer": {
+      "title": "Organizer",
+      "image": "./images/organizer.png"
+    },
+    "coOrganizer": {
+      "title": "Co-organizer",
+      "image": "./images/co-org.png"
+    },
+    "sponsor": {
+      "title": "Sponsor",
+      "image": "./images/sponsor.png"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "phone": "+886-2-27322701",
+      "address": "3F.-2, No. 56, Lane 258, Ruiguang Rd, Neihu District, Taipei City"
+    }
+  }
+}
