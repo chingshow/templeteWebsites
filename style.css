@@ -6,16 +6,15 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f7f6;
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 20px;
 }
 
 /* Header Styles */
@@ -24,16 +23,17 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #2c3e50;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem;
 }
 
 nav ul {
@@ -42,23 +42,22 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 2rem;
+    margin-left: 1.5rem;
 }
 
 nav a {
     text-decoration: none;
-    color: #ecf0f1;
+    color: #333;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #3498db;
+    color: #007bff;
 }
 
 .menu-toggle {
     display: none;
-    color: #ecf0f1;
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -66,7 +65,10 @@ nav a:hover {
 /* Hero Section */
 #hero {
     height: 100vh;
-    background: linear-gradient(135deg, #3498db, #8e44ad);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,128 +77,136 @@ nav a:hover {
 }
 
 .hero-content {
-    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
 }
 
 #hero h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .cta-button {
     display: inline-block;
-    padding: 1rem 2rem;
-    background-color: #e74c3c;
+    padding: 0.8rem 1.5rem;
+    background-color: rgb(146, 174, 208);
     color: white;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 5px;
     font-weight: bold;
-    margin-top: 2rem;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #c0392b;
+    margin-top: 1rem;
 }
 
 /* Sections */
 section {
-    padding: 6rem 0;
+    padding: 4rem 0;
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 3rem;
-    font-size: 2.5rem;
-    color: #2c3e50;
+    margin-bottom: 2rem;
 }
 
 /* Introduction Section */
-#intro {
-    background-color: white;
-}
-
 #intro .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     align-items: center;
-    gap: 4rem;
 }
 
 #intro img {
-    width: 50%;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 /* Speakers Section */
 .speaker-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
 }
 
 .speaker-card {
-    background-color: white;
-    border-radius: 15px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    height: 400px;
 }
 
 .speaker-card img {
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
 }
 
 .speaker-card h3 {
-    padding: 1.5rem 1.5rem 0.5rem;
-    font-size: 1.5rem;
-    color: #2c3e50;
+    padding: 1rem 1rem 0.5rem;
+    margin: 0;
 }
 
 .speaker-card .title {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     font-style: italic;
-    color: #7f8c8d;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .speaker-card .description {
-    padding: 0 1.5rem 1.5rem;
-    color: #34495e;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    max-height: 50%;
+    overflow-y: auto;
+}
+
+.speaker-card:hover .description {
+    transform: translateY(0);
 }
 
 .speaker-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+}
+
+.speaker-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba(248, 249, 250, 0), rgba(248, 249, 250, 1));
+    pointer-events: none;
 }
 
 /* Agenda Section */
-#agenda {
-    background-color: #ecf0f1;
-}
-
 .timeline {
     position: relative;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .timeline::after {
     content: '';
     position: absolute;
-    width: 4px;
-    background-color: #3498db;
+    width: 6px;
+    background-color: #007bff;
     top: 0;
     bottom: 0;
     left: 50%;
-    margin-left: -2px;
+    margin-left: -3px;
 }
 
 .timeline-item {
-    padding: 20px 40px;
+    padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
@@ -205,12 +215,12 @@ h2 {
 .timeline-item::after {
     content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
-    right: -10px;
+    width: 25px;
+    height: 25px;
+    right: -17px;
     background-color: white;
-    border: 4px solid #3498db;
-    top: 22px;
+    border: 4px solid #007bff;
+    top: 15px;
     border-radius: 50%;
     z-index: 1;
 }
@@ -224,97 +234,70 @@ h2 {
 }
 
 .right::after {
-    left: -10px;
-}
-
-.timeline-content {
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    left: -16px;
 }
 
 /* FAQ Section */
-#faq {
-    background-color: white;
-}
-
-.faq-container {
-    max-width: 800px;
-    margin: 0 auto;
+#faq .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
 
 .faq-item {
-    margin-bottom: 2rem;
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .faq-item h3 {
-    margin-bottom: 1rem;
-    color: #3498db;
-    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #007bff;
 }
 
 /* Registration Section */
-#register {
-    background-color: #ecf0f1;
-}
-
 .register-options {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
 }
 
 .register-button {
-    background-color: white;
-    border-radius: 15px;
-    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 1rem;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
 .register-button:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
 }
 
 .register-button img {
-    max-width: 200px;
+    max-width: 100%;
     height: auto;
 }
 
 #countdown {
     text-align: center;
-    font-size: 2rem;
-    margin-top: 3rem;
-    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-top: 2rem;
 }
 
 /* Footer */
 footer {
-    background-color: #2c3e50;
+    background-color: #333;
     color: white;
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 footer .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 3rem;
-}
-
-footer h3 {
-    color: #3498db;
-    margin-bottom: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
 }
 
 footer img {
     max-width: 100%;
-    margin-top: 1rem;
 }
 
 /* Responsive Design */
@@ -334,21 +317,33 @@ footer img {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #2c3e50;
+        background-color: rgba(255, 255, 255, 0.9);
     }
 
     nav ul.show li {
         margin: 0;
         padding: 1rem;
-        border-top: 1px solid #34495e;
+        border-top: 1px solid #ddd;
     }
 
     #intro .container {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
-    #intro img {
-        width: 100%;
+    .speaker-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .speaker-card {
+        height: 350px;
+    }
+
+    .speaker-card img {
+        height: 150px;
+    }
+
+    #faq .container {
+        grid-template-columns: 1fr;
     }
 
     .timeline::after {

@@ -22,8 +22,7 @@
   },
   "introduction": {
     "title": "Introduction",
-    "content": "Introduction of the activity. Good Morning Everyone!",
-    "image": "./images/intro-image.jpg"
+    "content": "Introduction of the activity. Good Morning Everyone!"
   },
   "speakers": {
     "title": "Speakers",
@@ -68,32 +67,7 @@
   },
   "agenda": {
     "title": "Agenda",
-    "items": [
-      {
-        "time": "9:00 AM",
-        "description": "Opening Ceremony"
-      },
-      {
-        "time": "10:00 AM",
-        "description": "Keynote Speaker"
-      },
-      {
-        "time": "11:30 AM",
-        "description": "Panel Discussion"
-      },
-      {
-        "time": "1:00 PM",
-        "description": "Lunch Break"
-      },
-      {
-        "time": "2:00 PM",
-        "description": "Workshop Sessions"
-      },
-      {
-        "time": "4:30 PM",
-        "description": "Closing Remarks"
-      }
-    ]
+    "image": "./images/Agenda.png"
   },
   "faq": {
     "title": "FAQ",

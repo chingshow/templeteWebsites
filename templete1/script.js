@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.logo').textContent = content.siteTitle;
 
         // Populate navigation
+        // Populate navigation
         const navUl = document.querySelector('nav ul');
         content.navigation.forEach(item => {
             const li = document.createElement('li');
@@ -49,30 +50,22 @@ document.addEventListener('DOMContentLoaded', function() {
             speakerGrid.appendChild(speakerCard);
         });
 
-        // Populate agenda timeline
-        const timeline = document.querySelector('.timeline');
-        content.agenda.items.forEach((item, index) => {
-            const timelineItem = document.createElement('div');
-            timelineItem.className = `timeline-item ${index % 2 === 0 ? 'left' : 'right'}`;
-            timelineItem.innerHTML = `
-                <div class="timeline-content">
-                    <h3>${item.time}</h3>
-                    <p>${item.description}</p>
-                </div>
-            `;
-            timeline.appendChild(timelineItem);
-        });
+        // Set agenda content
+        document.querySelector('#agenda h2').textContent = content.agenda.title;
+        document.querySelector('#agenda img').src = content.agenda.image;
 
         // Populate FAQ
-        const faqContent = document.querySelector('.faq-content');
+        const accordion = document.querySelector('.accordion');
         content.faq.items.forEach(item => {
             const faqItem = document.createElement('div');
-            faqItem.className = 'faq-item';
+            faqItem.className = 'accordion-item';
             faqItem.innerHTML = `
-                <h3>${item.question}</h3>
-                <p>${item.answer}</p>
+                <h3 class="accordion-header">${item.question}</h3>
+                <div class="accordion-content">
+                    <p>${item.answer}</p>
+                </div>
             `;
-            faqContent.appendChild(faqItem);
+            accordion.appendChild(faqItem);
         });
 
         // Set registration content
@@ -117,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const targetId = e.target.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
-                    const headerOffset = 100;
+                    const headerOffset = 100; // 根據您的頁面佈局調整這個值
                     const elementPosition = targetElement.getBoundingClientRect().top;
                     const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -129,6 +122,30 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // FAQ Accordion functionality
+    document.addEventListener('click', function(e) {
+        if (e.target && e.target.classList.contains('accordion-header')) {
+            e.target.classList.toggle('active');
+            const content = e.target.nextElementSibling;
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        }
+    });
 
     // Countdown timer
     function updateCountdown(eventDate) {
@@ -155,9 +172,49 @@ document.addEventListener('DOMContentLoaded', function() {
         update(); // Initial call to avoid delay
     }
 
-    // Parallax effect for hero section
-    window.addEventListener('scroll', function() {
-        const scrollPosition = window.pageYOffset;
-        document.querySelector('#hero').style.backgroundPositionY = scrollPosition * 0.7 + 'px';
+    // Fade-in effect on scroll
+    function fadeInOnScroll() {
+        const elements = document.querySelectorAll('.fade-in');
+        elements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const elementBottom = element.getBoundingClientRect().bottom;
+            if (elementTop < window.innerHeight && elementBottom > 0) {
+                element.classList.add('visible');
+            }
+        });
+    }
+
+    const speakerGrid = document.querySelector('.speaker-grid');
+    content.speakers.list.forEach(speaker => {
+        const speakerCard = document.createElement('div');
+        speakerCard.className = 'speaker-card';
+        speakerCard.innerHTML = `
+            <img src="${speaker.photo}" alt="${speaker.name}">
+            <h3>${speaker.name}</h3>
+            <p class="title">${speaker.title}</p>
+            <div class="description">
+                <p>${speaker.description}</p>
+            </div>
+        `;
+        speakerGrid.appendChild(speakerCard);
+
+        // 添加鼠標進入和離開事件
+        speakerCard.addEventListener('mouseenter', function() {
+            const description = this.querySelector('.description');
+            setTimeout(() => {
+                description.style.transform = 'translateY(100%)';
+                description.style.opacity = '0';
+            }, 200); // 200毫秒的延遲
+        });
+
+        speakerCard.addEventListener('mouseleave', function() {
+            const description = this.querySelector('.description');
+            description.style.transform = 'translateY(100%)';
+            description.style.opacity = '0';
+        });
     });
+
+
+    window.addEventListener('scroll', fadeInOnScroll);
+    fadeInOnScroll(); // Initial call for elements already in view
 });
