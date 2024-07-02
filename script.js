@@ -63,6 +63,17 @@ document.addEventListener('DOMContentLoaded', function() {
             timeline.appendChild(timelineItem);
         });
 
+        // Populate Documents
+        const documentsContent = document.querySelector('.documents-content');
+        content.documents.items.forEach(item => {
+            const documentItem = document.createElement('div');
+            documentItem.className = 'documents-item';
+            documentItem.innerHTML = `
+                <a href="./documents/${item.no}.html" target="_blank">${item.titles}</a> <p class="author">- ${item.author}</p>
+            `;
+            documentsContent.appendChild(documentItem);
+        });
+
         // Populate FAQ
         const faqContent = document.querySelector('.faq-content');
         content.faq.items.forEach(item => {

@@ -234,6 +234,46 @@ h2 {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+/* Documents Section */
+.documents {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.documents-item {
+    margin-bottom: 2rem;
+    border-top: 2px solid #6ab8bc;
+    border-bottom: 2px solid #6ab8bc;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.documents-item a {
+    /*margin-bottom: 1rem;*/
+    margin-left: 30vw;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.documents-item a:hover {
+    /*margin-bottom: 1rem;*/
+    margin-left: 30vw;
+    color: #6ab8bc;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.documents-item p {
+    text-align: right;
+    font-size: 1rem;
+    padding-right: 30vw;
+}
+
 /* FAQ Section */
 #faq {
     background-color: white;

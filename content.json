@@ -4,6 +4,7 @@
     {"label": "Introduction", "link": "#intro"},
     {"label": "Speakers", "link": "#speakers"},
     {"label": "Agenda", "link": "#agenda"},
+    {"label": "Documents", "link": "#documents"},
     {"label": "FAQ", "link": "#faq"},
     {"label": "Register", "link": "#register"}
   ],
@@ -92,6 +93,21 @@
       {
         "time": "4:30 PM",
         "description": "Closing Remarks"
+      }
+    ]
+  },
+  "documents": {
+    "title": "Documents",
+    "items": [
+      {
+        "titles": "Why you need to come here.",
+        "author": "meeee you",
+        "no": "001"
+      },
+      {
+        "titles": "Why you are mad.",
+        "author": "meeee you",
+        "no": "002"
       }
     ]
   },
