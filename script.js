@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Load content from JSON file
-    fetch('content.json')
+    fetch('try.json')
         .then(response => response.json())
         .then(data => {
             // Populate content
