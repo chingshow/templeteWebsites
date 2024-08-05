@@ -55,8 +55,8 @@ nav a {
 
 /* Hero Section */
 #hero {
-    height: 55.5vw;
-    background-image: url('../images_old/imageKV.png');
+    height: 100vh;
+    background-image: url('images_old/imageKV.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -64,14 +64,27 @@ nav a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: #ffffff;
 }
 
 #hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 10rem;
+    margin-bottom: -3rem;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+    /*border: #6ab8bc 1px solid;*/
+
 }
 
+#hero p{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+
+.titles {
+    background-color: rgba(0, 0, 0, 0.51);
+    padding-bottom: 2.6rem;
+}
 
 .cta-button {
     display: inline-block;

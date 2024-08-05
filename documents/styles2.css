@@ -45,6 +45,11 @@ body {
     font-size: 1.1em;
 }
 
+p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 @media (max-width: 600px) {
     body {
         padding: 10px;

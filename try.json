@@ -1,205 +1,130 @@
 {
-    "siteTitle": "Activity Title",
-    "navigation": [
-        {
-            "label": "Introduction",
-            "link": "#intro"
-        },
-        {
-            "label": "Speakers",
-            "link": "#speakers"
-        },
-        {
-            "label": "Agenda",
-            "link": "#agenda"
-        },
-        {
-            "label": "Documents",
-            "link": "#documents"
-        },
-        {
-            "label": "FAQ",
-            "link": "#faq"
-        },
-        {
-            "label": "Register",
-            "link": "#register"
-        }
-    ],
-    "languages": [
-        {
-            "label": "English",
-            "code": "en",
-            "active": true
-        },
-        {
-            "label": "中文",
-            "code": "zh",
-            "active": false
-        }
-    ],
-    "hero": {
-        "title": "Activity Title",
-        "date": "1095",
-        "ctaButton": {
-            "text": "Register Now",
-            "link": "#register"
-        },
-        "backgroundImage": "./images/imageKV.png"
-    },
-    "introduction": {
-        "title": "Introduction",
-        "content": "Introduction of the activity. Good Morning Everyone!",
-        "image": "./images/intro-image.jpg"
-    },
-    "speakers": {
-        "title": "Speakers",
-        "list": [
-            {
-                "name": "Your Name",
-                "photo": "./images/javascript.jpg",
-                "title": "Where you are from, what you can do",
-                "description": "Introduce yourself. Introduce yourself. Introduce yourself."
+    "0": {
+        "_ragicId": 0,
+        "_star": false,
+        "編號": "00001",
+        "_index_title_": "00001",
+        "image": "3aLnT9P1Je@imageKV.png",
+        "主題": "Happy Happy Happy",
+        "活動時間": "2024/07/19 00:00:00",
+        "_index_calDates_": "d1000016 2024/07/19 00:00:00",
+        "Introduction Title": "Are You Happy?",
+        "Introduction": "Happy is good, Happy is important.\r\nBe Happy!",
+        "Agenda": "8PZwZIKTlj@Agenda.png",
+        "Co-organizor": "hubc4E5lKP@co-org.png",
+        "Sponsor": "0wNX8znyeI@sponsor.png",
+        "_subtable_1000033": {
+            "0": {
+                "_ragicId": 0,
+                "_parentRagicId": 0,
+                "_header_Y": [
+                    9
+                ],
+                "_start_X": 1,
+                "講者": "Mr. JAVASCRIPT",
+                "title": "dfsdfsdf",
+                "introduction": "fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+                "Image": "046IA6C40S@javascript.jpg"
             },
-            {
-                "name": "Your Name",
-                "photo": "./images/html.jpg",
-                "title": "Where you are from, what you can do",
-                "description": "Introduce yourself. Introduce yourself. Introduce yourself."
+            "1": {
+                "_ragicId": 1,
+                "_parentRagicId": 0,
+                "_header_Y": [
+                    9
+                ],
+                "_start_X": 1,
+                "講者": "Mr. HTML",
+                "title": "asfggggggggggggd",
+                "introduction": "sdddddddsddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+                "Image": "r1R4uUqNw4@html.jpg"
             },
-            {
-                "name": "Your Name",
-                "photo": "./images/css.jpg",
-                "title": "Where you are from, what you can do Where you are from, what you can doWhere you are from, what you can do",
-                "description": "Introduce yourself. Introduce yourself. Introduce yourself."
-            },
-            {
-                "name": "Your Name",
-                "photo": "./images/css.jpg",
-                "title": "Where you are from, what you can do",
-                "description": "Introduce yourself. Introduce yourself. Introduce yourself.Introduce yourself. Introduce yourself. Introduce yourself.Introduce yourself. Introduce yourself. Introduce yourself.Introduce yourself. Introduce yourself. Introduce yourself.Introduce yourself. Introduce yourself. Introduce yourself."
-            },
-            {
-                "name": "Your Name",
-                "photo": "./images/css.jpg",
-                "title": "Where you are from, what you can do",
-                "description": "Introduce yourself. Introduce yourself. Introduce yourself."
-            },
-            {
-                "name": "Your Name",
-                "photo": "./images/css.jpg",
-                "title": "Where you are from, what you can do",
-                "description": "Introduce yourself. Introduce yourself. Introduce yourself."
+            "2": {
+                "_ragicId": 2,
+                "_parentRagicId": 0,
+                "_header_Y": [
+                    9
+                ],
+                "_start_X": 1,
+                "講者": "Mr. CSS",
+                "title": "sdgsdgdgsg",
+                "introduction": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "Image": "t52e5HfoIT@css.jpg"
             }
-        ]
-    },
-    "agenda": {
-        "title": "Agenda",
-        "items": [
-            {
-                "time": "9:00 AM",
-                "description": "Opening Ceremony"
-            },
-            {
-                "time": "10:00 AM",
-                "description": "Keynote Speaker"
-            },
-            {
-                "time": "11:30 AM",
-                "description": "Panel Discussion"
-            },
-            {
-                "time": "1:00 PM",
-                "description": "Lunch Break"
-            },
-            {
-                "time": "2:00 PM",
-                "description": "Workshop Sessions"
-            },
-            {
-                "time": "4:30 PM",
-                "description": "Closing Remarks"
-            }
-        ]
-    },
-    "documents": {
-        "title": "Documents",
-        "items": [
-            {
-                "titles": "Why You Need to Come Here",
-                "author": "meeee you",
-                "no": "001"
-            },
-            {
-                "titles": "Why You Are Mad",
-                "author": "meeee you",
-                "no": "002"
-            },
-            {
-                "titles": "As real as it gets",
-                "author": "SHARESHAREPIN ITSHARE ",
-                "no": "003"
-            },
-            {
-                "titles": "The Beauty of Embracing Change",
-                "author": "Sarah Adams",
-                "no": "004"
-            },
-            {
-                "titles": "The Benefits of Regular Exercise",
-                "author": "Dr. Emily Watson",
-                "no": "005"
-            }
-        ]
-    },
-    "faq": {
-        "title": "FAQ",
-        "items": [
-            {
-                "question": "Questions1",
-                "answer": "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers."
-            },
-            {
-                "question": "Questions2",
-                "answer": "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers."
-            },
-            {
-                "question": "Questions3",
-                "answer": "Answers. Answers. Answers. Answers. Answers. Answers. Answers. Answers."
-            }
-        ]
-    },
-    "registration": {
-        "title": "Registration",
-        "options": [
-            {
-                "link": "https://www.accupass.com/go/Avatar2023",
-                "image": "./images/signUpWebsite1.png"
-            },
-            {
-                "link": "https://www.eventbrite.com/e/avatar-medicine-forum-2023-tickets-697936054527?aff=oddtdtcreator",
-                "image": "./images/signUpWebsite2.png"
-            }
-        ],
-        "eventDate": "2024-12-31T00:00:00"
-    },
-    "footer": {
-        "organizer": {
-            "title": "Organizer",
-            "image": "./images/organizer.png"
         },
-        "coOrganizer": {
-            "title": "Co-organizer",
-            "image": "./images/co-org.png"
+        "_subtable_1000034": {
+            "0": {
+                "_ragicId": 0,
+                "_parentRagicId": 0,
+                "_header_Y": [
+                    13
+                ],
+                "_start_X": 1,
+                "FAQ": "q1",
+                "Answer": "fdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+            },
+            "1": {
+                "_ragicId": 1,
+                "_parentRagicId": 0,
+                "_header_Y": [
+                    13
+                ],
+                "_start_X": 1,
+                "FAQ": "q2",
+                "Answer": "ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
+            },
+            "2": {
+                "_ragicId": 2,
+                "_parentRagicId": 0,
+                "_header_Y": [
+                    13
+                ],
+                "_start_X": 1,
+                "FAQ": "q3",
+                "Answer": "ddddddddddggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg"
+            }
         },
-        "sponsor": {
-            "title": "Sponsor",
-            "image": "./images/sponsor.png"
+        "_subtable_1000035": {
+            "0": {
+                "_ragicId": 0,
+                "_parentRagicId": 0,
+                "_header_Y": [
+                    17
+                ],
+                "_start_X": 1,
+                "編號": "00001",
+                "日期": "2024/07/02 00:00:00",
+                "標題": "aaa",
+                "作者": "gfgdfgdfg",
+                "內容": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+            },
+            "1": {
+                "_ragicId": 1,
+                "_parentRagicId": 0,
+                "_header_Y": [
+                    17
+                ],
+                "_start_X": 1,
+                "編號": "00002",
+                "日期": "2024/07/10 00:00:00",
+                "標題": "ssss",
+                "作者": "shdhshsdhshh",
+                "內容": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+            },
+            "2": {
+                "_ragicId": 2,
+                "_parentRagicId": 0,
+                "_header_Y": [
+                    17
+                ],
+                "_start_X": 1,
+                "編號": "00003",
+                "日期": "2024/07/18 00:00:00",
+                "標題": "dddd",
+                "作者": "dggggggggggggggggdd",
+                "內容": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+            }
         },
-        "contact": {
-            "title": "Contact Us",
-            "phone": "+886-2-27322701",
-            "address": "3F.-2, No. 56, Lane 258, Ruiguang Rd, Neihu District, Taipei City"
-        }
+        "_index_": "",
+        "_seq": 1
     }
 }

@@ -1,0 +1,136 @@
+{
+    "siteTitle": "Happy Happy Happy",
+    "navigation": [
+        {
+            "label": "Introduction",
+            "link": "#intro"
+        },
+        {
+            "label": "Speakers",
+            "link": "#speakers"
+        },
+        {
+            "label": "Agenda",
+            "link": "#agenda"
+        },
+        {
+            "label": "Documents",
+            "link": "#documents"
+        },
+        {
+            "label": "FAQ",
+            "link": "#faq"
+        },
+        {
+            "label": "Register",
+            "link": "#register"
+        }
+    ],
+    "languages": [
+        {
+            "label": "English",
+            "code": "en",
+            "active": true
+        },
+        {
+            "label": "中文",
+            "code": "zh",
+            "active": false
+        }
+    ],
+    "hero": {
+        "title": "Happy Happy Happy",
+        "date": "2024/07/19",
+        "ctaButton": {
+            "text": "Register Now",
+            "link": "#register"
+        },
+        "backgroundImage": "./images/0/imageKV.png"
+    },
+    "introduction": {
+        "title": "Are You Happy?",
+        "content": "Happy is good, Happy is important.\r\nBe Happy!",
+        "image": "./images/0/intro-image.jpg"
+    },
+    "speakers": {
+        "title": "Speakers",
+        "list": [
+            {
+                "name": "Mr. JAVASCRIPT",
+                "photo": "./images/0/javascript.jpg",
+                "title": "dfsdfsdf",
+                "description": "fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+            },
+            {
+                "name": "Mr. HTML",
+                "photo": "./images/0/html.jpg",
+                "title": "asfggggggggggggd",
+                "description": "sdddddddsddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+            },
+            {
+                "name": "Mr. CSS",
+                "photo": "./images/0/css.jpg",
+                "title": "sdgsdgdgsg",
+                "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            }
+        ]
+    },
+    "agenda": {
+        "title": "Agenda",
+        "image": "./images/0/Agenda.png"
+    },
+    "documents": {
+        "title": "Documents",
+        "items": []
+    },
+    "faq": {
+        "title": "FAQ",
+        "items": [
+            {
+                "question": "q1",
+                "answer": "fdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+            },
+            {
+                "question": "q2",
+                "answer": "ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"
+            },
+            {
+                "question": "q3",
+                "answer": "ddddddddddggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg"
+            }
+        ]
+    },
+    "registration": {
+        "title": "Registration",
+        "options": [
+            {
+                "link": "https://www.accupass.com/go/Avatar2023",
+                "image": "./images/0/signUpWebsite1.png"
+            },
+            {
+                "link": "https://www.eventbrite.com/e/avatar-medicine-forum-2023-tickets-697936054527?aff=oddtdtcreator",
+                "image": "./images/0/signUpWebsite2.png"
+            }
+        ],
+        "eventDate": "2024/07/19 00:00:00"
+    },
+    "footer": {
+        "organizer": {
+            "title": "Organizer",
+            "image": "./images/0/organizer.png"
+        },
+        "coOrganizer": {
+            "title": "Co-organizer",
+            "image": "./images/0/co-org.png"
+        },
+        "sponsor": {
+            "title": "Sponsor",
+            "image": "./images/0/sponsor.png"
+        },
+        "contact": {
+            "title": "Contact Us",
+            "phone": "+886-2-27322701",
+            "address": "3F.-2, No. 56, Lane 258, Ruiguang Rd, Neihu District, Taipei City"
+        }
+    }
+}

@@ -1,0 +1,288 @@
+{
+    "siteTitle": "Rusty Lake",
+    "navigation": [
+        {
+            "label": "Introduction",
+            "link": "#intro"
+        },
+        {
+            "label": "Speakers",
+            "link": "#speakers"
+        },
+        {
+            "label": "Agenda",
+            "link": "#agenda"
+        },
+        {
+            "label": "Documents",
+            "link": "#documents"
+        },
+        {
+            "label": "FAQ",
+            "link": "#faq"
+        },
+        {
+            "label": "Register",
+            "link": "#register"
+        }
+    ],
+    "languages": [
+        {
+            "label": "English",
+            "code": "en",
+            "active": true
+        },
+        {
+            "label": "中文",
+            "code": "zh",
+            "active": false
+        }
+    ],
+    "hero": {
+        "title": "Rusty Lake",
+        "date": "2024/08/22",
+        "ctaButton": {
+            "text": "Register Now",
+            "link": "#register"
+        },
+        "backgroundImage": "./images/1/victor.png"
+    },
+    "introduction": {
+        "title": "There will be blood",
+        "content": "A place for relaxation, a place to empty the mind, reflect to the past, and the future.\r\nThe past is never past, it's not even passed.\r\nHello, your place has been taken.\r\nSay The Word.\r\n\r\n\r\nFate.\r\nShe is waiting for you.",
+        "image": "./images/1/intro-image.jpg"
+    },
+    "speakers": {
+        "title": "Speakers",
+        "list": [
+            {
+                "name": "Albert",
+                "photo": "./images/1/photo1721010922.jpeg",
+                "title": "boss",
+                "description": "I don't love Ida."
+            },
+            {
+                "name": "Laura",
+                "photo": "./images/1/photo1721010919.jpeg",
+                "title": "Mom",
+                "description": "My daughter will return the lake."
+            },
+            {
+                "name": "Mr. Owl",
+                "photo": "./images/1/photo1721010913.jpeg",
+                "title": "Doctor",
+                "description": "The glorious day of the lake is coming."
+            }
+        ]
+    },
+    "agenda": {
+        "title": "Agenda",
+        "image": "./images/1/ALL-New_CF_Virtual_Background_EN-240101-3-010.png"
+    },
+    "documents": {
+        "title": "Documents",
+        "items": [
+            {
+                "titles": "Taxohope-N 20mg/ml濃縮注射液介紹",
+                "author": "癌症知識站",
+                "no": "00001"
+            },
+            {
+                "titles": "Taxohope-N 20mg/ml濃縮注射液介紹",
+                "author": "癌症知識站",
+                "no": "00001"
+            },
+            {
+                "titles": "Taxohope-N 20mg/ml濃縮注射液介紹",
+                "author": "癌症知識站",
+                "no": "00001"
+            },
+            {
+                "titles": "Taxohope-N 20mg/ml濃縮注射液介紹",
+                "author": "癌症知識站",
+                "no": "00001"
+            },
+            {
+                "titles": "Taxohope-N 20mg/ml濃縮注射液介紹",
+                "author": "癌症知識站",
+                "no": "00001"
+            },
+            {
+                "titles": "PARAPLATIN FOR INJECTION介紹",
+                "author": "Cancer Knowledge",
+                "no": "00002"
+            },
+            {
+                "titles": "PARAPLATIN FOR INJECTION介紹",
+                "author": "Cancer Knowledge",
+                "no": "00002"
+            },
+            {
+                "titles": "PARAPLATIN FOR INJECTION介紹",
+                "author": "Cancer Knowledge",
+                "no": "00002"
+            },
+            {
+                "titles": "PARAPLATIN FOR INJECTION介紹",
+                "author": "Cancer Knowledge",
+                "no": "00002"
+            },
+            {
+                "titles": "PARAPLATIN FOR INJECTION介紹",
+                "author": "Cancer Knowledge",
+                "no": "00002"
+            },
+            {
+                "titles": "sdlf kjsdlfjsl",
+                "author": "sdfdfdf",
+                "no": "00004"
+            },
+            {
+                "titles": "sdlf kjsdlfjsl",
+                "author": "sdfdfdf",
+                "no": "00004"
+            },
+            {
+                "titles": "sdlf kjsdlfjsl",
+                "author": "sdfdfdf",
+                "no": "00004"
+            },
+            {
+                "titles": "sdlf kjsdlfjsl",
+                "author": "sdfdfdf",
+                "no": "00004"
+            },
+            {
+                "titles": "sdlf kjsdlfjsl",
+                "author": "sdfdfdf",
+                "no": "00004"
+            },
+            {
+                "titles": "sdlf kjsdlfjsl",
+                "author": "sdfdfdf",
+                "no": "00004"
+            },
+            {
+                "titles": "sdlf kjsdlfjsl",
+                "author": "sdfdfdf",
+                "no": "00004"
+            },
+            {
+                "titles": "SITCON 2024 議程組 一籌共筆",
+                "author": "sitcon",
+                "no": "00005"
+            },
+            {
+                "titles": "SITCON 2024 議程組 一籌共筆",
+                "author": "sitcon",
+                "no": "00005"
+            },
+            {
+                "titles": "SITCON 2024 議程組 一籌共筆",
+                "author": "sitcon",
+                "no": "00005"
+            },
+            {
+                "titles": "SITCON 2024 議程組 一籌共筆",
+                "author": "sitcon",
+                "no": "00005"
+            },
+            {
+                "titles": "SITCON 2024 議程組 一籌共筆",
+                "author": "sitcon",
+                "no": "00005"
+            },
+            {
+                "titles": "SITCON 2024 議程組 一籌共筆",
+                "author": "sitcon",
+                "no": "00005"
+            },
+            {
+                "titles": "SITCON 2024 議程組 一籌共筆",
+                "author": "sitcon",
+                "no": "00005"
+            },
+            {
+                "titles": "SITCON 2024 議程組 CFP Poster 討論聚",
+                "author": "sitcon",
+                "no": "00006"
+            },
+            {
+                "titles": "SITCON 2024 議程組 CFP Poster 討論聚",
+                "author": "sitcon",
+                "no": "00006"
+            },
+            {
+                "titles": "SITCON 2024 議程組 CFP Poster 討論聚",
+                "author": "sitcon",
+                "no": "00006"
+            },
+            {
+                "titles": "SITCON 2024 議程組 CFP Poster 討論聚",
+                "author": "sitcon",
+                "no": "00006"
+            },
+            {
+                "titles": "SITCON 2024 議程組 CFP Poster 討論聚",
+                "author": "sitcon",
+                "no": "00006"
+            },
+            {
+                "titles": "SITCON 2024 議程組 CFP Poster 討論聚",
+                "author": "sitcon",
+                "no": "00006"
+            },
+            {
+                "titles": "SITCON 2024 議程組 CFP Poster 討論聚",
+                "author": "sitcon",
+                "no": "00006"
+            }
+        ]
+    },
+    "faq": {
+        "title": "FAQ",
+        "items": [
+            {
+                "question": "The Seasons.",
+                "answer": "Anything you touch, you change."
+            },
+            {
+                "question": "Say the Word.",
+                "answer": "Fate."
+            },
+            {
+                "question": "Find me in the stars.",
+                "answer": "Love."
+            }
+        ]
+    },
+    "registration": {
+        "title": "Registration",
+        "options": [
+            {
+                "link": "https://www.accupass.com/go/Avatar2023",
+                "image": "./images/1/signUpWebsite1.png"
+            }
+        ],
+        "eventDate": "2024/08/22 00:00:00"
+    },
+    "footer": {
+        "organizer": {
+            "title": "Organizer",
+            "image": "./images/1/organizer.png"
+        },
+        "coOrganizer": {
+            "title": "Co-organizer",
+            "image": "./images/1/messageImage_1715682460820.jpg"
+        },
+        "sponsor": {
+            "title": "Sponsor",
+            "image": "./images/1/479434763225268353.jpg"
+        },
+        "contact": {
+            "title": "Contact Us",
+            "phone": "+886-2-27322701",
+            "address": "3F.-2, No. 56, Lane 258, Ruiguang Rd, Neihu District, Taipei City"
+        }
+    }
+}

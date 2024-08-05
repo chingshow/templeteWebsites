@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Load content from JSON file
-    fetch('try.json')
+    fetch('content_1.json')
         .then(response => response.json())
         .then(data => {
             // Populate content
@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Set introduction content
         document.querySelector('#intro h2').textContent = content.introduction.title;
         document.querySelector('#intro p').textContent = content.introduction.content;
+        document.querySelector('#agenda img').src = content.agenda.image;
 
         // Populate speakers
         const speakerGrid = document.querySelector('.speaker-grid');
@@ -49,27 +50,15 @@ document.addEventListener('DOMContentLoaded', function() {
             speakerGrid.appendChild(speakerCard);
         });
 
-        // Populate agenda timeline
-        const timeline = document.querySelector('.timeline');
-        content.agenda.items.forEach((item, index) => {
-            const timelineItem = document.createElement('div');
-            timelineItem.className = `timeline-item ${index % 2 === 0 ? 'left' : 'right'}`;
-            timelineItem.innerHTML = `
-                <div class="timeline-content">
-                    <h3>${item.time}</h3>
-                    <p>${item.description}</p>
-                </div>
-            `;
-            timeline.appendChild(timelineItem);
-        });
 
         // Populate Documents
         const documentsContent = document.querySelector('.documents-content');
         content.documents.items.forEach(item => {
-            const documentItem = document.createElement('div');
-            documentItem.className = 'documents-item';
+            const documentItem = document.createElement('a');
+            documentItem.href = `./documents/${item.no}.html`;
+            documentItem.target = "_blank";
             documentItem.innerHTML = `
-                <a href="./documents/${item.no}.html" target="_blank">${item.titles}</a> <p class="author">- ${item.author}</p>
+                <div class="documents-item"><h3>${item.titles}</h3><p class="author">- ${item.author}</p></div> 
             `;
             documentsContent.appendChild(documentItem);
         });
